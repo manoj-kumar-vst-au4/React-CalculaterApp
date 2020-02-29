@@ -68,8 +68,9 @@ class App extends React.Component{
   render(){
     return(
       <div className="container">
-        <div className="row mt-4">
-          <div className="col-md-4 offset-md-4 border border-dark rounded-lg bg-light pb-5">
+        <div className="row mt-4 d-flex justify-content-center">
+          <div className="col-md-4  border border-dark rounded-lg bg-dark  shadow">
+            <h3 className="text-center text-white">CALCULATER</h3>
             <Input
              handleInput1={this.handleInput1}
              handleInput2={this.handleInput2}
@@ -83,7 +84,7 @@ class App extends React.Component{
               dvd={this.dvd}
             />
             <div className="text-center mt-3">
-            <button className="btn btn-dark border border-dark">Result:{this.state.result}</button>
+            <button className="btn btn-dark border border-white">Result:{this.state.result}</button>
             </div>
           </div>
         </div>
